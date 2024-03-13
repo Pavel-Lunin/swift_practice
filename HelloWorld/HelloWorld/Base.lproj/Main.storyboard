@@ -15,13 +15,43 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbM-As-ZKd">
+                                <rect key="frame" x="36" y="704" width="142" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="K3T-i7-cU8"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="142" id="pOg-Q6-aav"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O18-8T-dpa">
+                                <rect key="frame" x="215" y="704" width="142" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="142" id="AV7-qZ-Zoa"/>
+                                    <constraint firstAttribute="height" constant="114" id="Lxu-ed-sNC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="O18-8T-dpa" firstAttribute="width" secondItem="FbM-As-ZKd" secondAttribute="width" id="6oo-6t-LXr"/>
+                            <constraint firstItem="O18-8T-dpa" firstAttribute="height" secondItem="FbM-As-ZKd" secondAttribute="height" id="BXx-sc-rXq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O18-8T-dpa" secondAttribute="trailing" constant="36" id="IOM-da-rk1"/>
+                            <constraint firstItem="FbM-As-ZKd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="J4q-nM-K2G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="O18-8T-dpa" secondAttribute="bottom" id="h25-OK-CxR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FbM-As-ZKd" secondAttribute="bottom" id="xI7-tu-Wb0"/>
+                            <constraint firstItem="O18-8T-dpa" firstAttribute="leading" secondItem="FbM-As-ZKd" secondAttribute="trailing" constant="37" id="xOk-47-S8F"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-28"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-28.169014084507044"/>
         </scene>
     </scenes>
     <resources>
