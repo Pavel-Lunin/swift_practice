@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbM-As-ZKd">
-                                <rect key="frame" x="36" y="784" width="160.66666666666666" height="114"/>
+                                <rect key="frame" x="36" y="622" width="152.66666666666666" height="114"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="114" id="K3T-i7-cU8"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="142" id="pOg-Q6-aav"/>
@@ -27,7 +27,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O18-8T-dpa">
-                                <rect key="frame" x="233.66666666666663" y="784" width="160.33333333333337" height="114"/>
+                                <rect key="frame" x="225.66666666666663" y="622" width="152.33333333333337" height="114"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="142" id="AV7-qZ-Zoa"/>
                                     <constraint firstAttribute="height" constant="114" id="Lxu-ed-sNC"/>
@@ -35,19 +35,25 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2S0-Xw-F9i">
-                                <rect key="frame" x="36" y="349" width="358" height="234"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2S0-Xw-F9i">
+                                <rect key="frame" x="36" y="351" width="342" height="217"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2S0-Xw-F9i" secondAttribute="height" multiplier="358:227" id="p5i-lp-QQf"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="O18-8T-dpa" firstAttribute="width" secondItem="FbM-As-ZKd" secondAttribute="width" id="6oo-6t-LXr"/>
+                            <constraint firstItem="2S0-Xw-F9i" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="BXp-z3-viB"/>
                             <constraint firstItem="O18-8T-dpa" firstAttribute="height" secondItem="FbM-As-ZKd" secondAttribute="height" id="BXx-sc-rXq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O18-8T-dpa" secondAttribute="trailing" constant="36" id="IOM-da-rk1"/>
+                            <constraint firstItem="FbM-As-ZKd" firstAttribute="top" secondItem="2S0-Xw-F9i" secondAttribute="bottom" constant="54" id="IPR-ij-9oG"/>
                             <constraint firstItem="FbM-As-ZKd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="J4q-nM-K2G"/>
+                            <constraint firstItem="2S0-Xw-F9i" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aco-LS-k8l"/>
+                            <constraint firstItem="2S0-Xw-F9i" firstAttribute="leading" secondItem="FbM-As-ZKd" secondAttribute="leading" priority="999" id="bXM-AP-eYR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="O18-8T-dpa" secondAttribute="bottom" id="h25-OK-CxR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FbM-As-ZKd" secondAttribute="bottom" id="xI7-tu-Wb0"/>
                             <constraint firstItem="O18-8T-dpa" firstAttribute="leading" secondItem="FbM-As-ZKd" secondAttribute="trailing" constant="37" id="xOk-47-S8F"/>
@@ -56,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129.76744186046511" y="-29.613733905579402"/>
+            <point key="canvasLocation" x="128.37209302325581" y="-30.901287553648071"/>
         </scene>
     </scenes>
     <resources>
