@@ -11,15 +11,16 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     
-    @IBAction func ChangeTextInLabel(_ sender: Any) {
+    @IBAction func changeTextInLabel(_ sender: UIButton) {
+        
+        if (label.text == "Hello, World!") {
+            label.text = "Label"
+            return
+        }
+        label.text = "Hello, World!"
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func sayInConsole(_ sender: UIButton) {
+        print("HELLO, world in the console!")
     }
-
-    
-    
 }
 
