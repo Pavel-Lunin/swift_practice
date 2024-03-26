@@ -98,7 +98,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.077520940721649501" green="0.0" blue="0.069593937944782802" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.13137619120558508" green="0.13137619120558508" blue="0.13137619120558508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="egP-AS-JTV" firstAttribute="top" secondItem="5f5-rP-cEE" secondAttribute="bottom" constant="133.66999999999999" id="BDu-Ek-x1G"/>
                             <constraint firstItem="Id7-sV-l2r" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="C2R-Bs-nKy"/>
@@ -113,6 +113,7 @@
                     </view>
                     <connections>
                         <outlet property="dateTF" destination="IcD-4b-WQV" id="a6h-t4-YjI"/>
+                        <outlet property="findWeekDayBTN" destination="dhU-ag-1KU" id="6J6-aF-PDx"/>
                         <outlet property="monthTF" destination="W4c-Tb-ffO" id="Uke-G1-2mh"/>
                         <outlet property="resultLabel" destination="Id7-sV-l2r" id="KVi-fC-rqt"/>
                         <outlet property="view" destination="Yz1-f3-aFa" id="bNT-eg-bRN"/>
@@ -121,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54.418604651162788" y="-27.682403433476395"/>
+            <point key="canvasLocation" x="54.198473282442748" y="-28.169014084507044"/>
         </scene>
     </scenes>
     <resources>
