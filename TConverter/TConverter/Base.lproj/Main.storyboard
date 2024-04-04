@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,12 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="F4H-WO-dmq">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="F4H-WO-dmq">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0H-BJ-5TD">
                                 <rect key="frame" x="165" y="292" width="84" height="60"/>
@@ -38,8 +37,8 @@
                                 <rect key="frame" x="69" y="409" width="276" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqh-qA-cla">
-                                <rect key="frame" x="86" y="20" width="242" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aqh-qA-cla">
+                                <rect key="frame" x="39" y="20" width="242" height="45"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -48,30 +47,35 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="aqh-qA-cla" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="DOb-gR-FrR"/>
-                            <constraint firstItem="aqh-qA-cla" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OKZ-k8-goT"/>
-                            <constraint firstItem="aqh-qA-cla" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Utq-C2-9mv"/>
+                            <constraint firstAttribute="trailing" secondItem="F4H-WO-dmq" secondAttribute="trailing" id="3HR-SH-5jP"/>
+                            <constraint firstItem="F4H-WO-dmq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5UY-Ya-0TB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F4H-WO-dmq" secondAttribute="trailing" id="BQh-7E-hLl"/>
+                            <constraint firstAttribute="bottom" secondItem="F4H-WO-dmq" secondAttribute="bottom" id="KxF-Fo-raT"/>
+                            <constraint firstItem="F4H-WO-dmq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Q5w-K5-h4Z"/>
+                            <constraint firstAttribute="bottom" secondItem="F4H-WO-dmq" secondAttribute="bottom" id="bhQ-4a-X1X"/>
+                            <constraint firstItem="aqh-qA-cla" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="kPf-8Y-q1j"/>
+                            <constraint firstItem="aqh-qA-cla" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lHx-fl-ium"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="Utq-C2-9mv"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="DOb-gR-FrR"/>
+                                <exclude reference="kPf-8Y-q1j"/>
+                                <exclude reference="lHx-fl-ium"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="F4H-WO-dmq"/>
+                            </mask>
                             <mask key="constraints">
-                                <include reference="Utq-C2-9mv"/>
+                                <include reference="kPf-8Y-q1j"/>
+                                <include reference="lHx-fl-ium"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111.59420289855073" y="-28.532608695652176"/>
+            <point key="canvasLocation" x="110.91549295774648" y="-30"/>
         </scene>
     </scenes>
     <resources>
