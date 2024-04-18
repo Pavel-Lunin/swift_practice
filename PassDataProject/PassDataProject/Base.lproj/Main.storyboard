@@ -36,7 +36,6 @@
                                 </state>
                                 <connections>
                                     <action selector="sendPressedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="us6-xk-qmM"/>
-                                    <segue destination="Ok1-bh-sJJ" kind="show" id="qaI-xc-LUh"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mqv-pB-KPu">
@@ -71,11 +70,12 @@
                     <connections>
                         <outlet property="loginTextField" destination="Mqv-pB-KPu" id="5xT-tv-ekH"/>
                         <outlet property="passwordTextField" destination="uGf-XM-Dac" id="BZa-2w-VVU"/>
+                        <segue destination="Ok1-bh-sJJ" kind="show" identifier="detailSegue" id="Tvy-Ur-qcS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76.875" y="-34.859154929577464"/>
+            <point key="canvasLocation" x="-47" y="-36"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="66P-sW-hbW">
