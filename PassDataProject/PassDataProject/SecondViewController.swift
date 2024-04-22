@@ -12,7 +12,9 @@ class SecondViewController: UIViewController {
     var login: String! 
     @IBOutlet weak var label: UILabel!
     
-    @IBAction func sendPressed(button: UIButton){}
+    @IBAction func sendPressed(button: UIButton){
+        performSegue(withIdentifier: "unwindSegue", sender: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

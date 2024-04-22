@@ -11,9 +11,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+
+    @IBOutlet weak var returnLabel: UILabel!
     
     @IBAction func sendPressed(button: UIButton) {
         performSegue(withIdentifier: "detailSegue", sender: nil)
+    }
+    
+    @IBAction func unwindToMainScreen(segue: UIStoryboardSegue){
+        guard segue.identifier == "unwindSegue" else {return}
+        guard let scv = segue.source as? SecondViewController else {return}
+        self.returnLabel.text = scv.label.text
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
