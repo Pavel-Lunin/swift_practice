@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isError = false
+    @State var titleBtn = "Вход"
+    
     var body: some View {
         VStack {
         Button(action:{
-            print("тест")
+            self.isError = true
             }, label: {
-                Text("Вход")
-            })
+                Text(titleBtn)
+            }).alert(isPresented: $isError) {
+                Alert(title: Text("test"), message: Text("Вы уверены?"), primaryButton: .destructive(Text("да"), action: {
+                    titleBtn = "нажат 'да'"
+                }), secondaryButton: .cancel(Text("отменить"), action: {
+                    titleBtn = "нажат 'отменить'"
+                }))
+            }
 
         }
         .padding()
