@@ -11,25 +11,28 @@ struct ContentView: View {
     @State var section = 0
     var settingsTime = [" ", "5 min", "10 min", "15 min"]
     
+    @State var isOn = false
+    
     @State var isError = false
-    @State var titleBtn = "Показать алерт"
+    @State var titleBtn = "Показать ActionSheet"
     
     var body: some View {
         NavigationStack {
-                VStack{
-                    List {
+                Form {
                         NavigationLink {
-                            Picker(selection: $section, label: Text("Время"), content: {
-                                ForEach(0..<settingsTime.count, id: \.self) {
-                                    Text(self.settingsTime[$0])
-                                    
-                                }
-                            }).pickerStyle(.wheel)
+                                Picker(selection: $section, label: Text("Время"), content: {
+                                    ForEach(0..<settingsTime.count, id: \.self) {
+                                        Text(self.settingsTime[$0])
+                                        
+                                    }
+                                }).pickerStyle(.wheel)
+                            
                         } label: {
                             HStack {Text("Время")
                                 Spacer()
                                 Text("\(settingsTime[section])")}
                         }
+                    
                         
                         NavigationLink {
                             showAlert()
@@ -42,7 +45,10 @@ struct ContentView: View {
                         } label: {
                             Text("Тест ActionSheet")
                         }
-                    }
+                        
+                        Toggle(isOn: $isOn) {
+                            Text("Авиарежим")
+                        }
                 }.navigationBarTitle("Настройки")
         }
     }
