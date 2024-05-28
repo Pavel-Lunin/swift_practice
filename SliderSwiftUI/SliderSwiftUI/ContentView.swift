@@ -29,8 +29,11 @@ class PlayerViewModel: ObservableObject {
     }
     
     private func playSoung(name: String) {
-        guard let audioPath = Bundle.main.path(forResource: name, ofType: "mp3") else {return}
-        
+        print(name)
+        guard let audioPath = Bundle.main.path(forResource: name, ofType: "mp3") else {
+            print("Sound file not found")
+            return
+        }
         do {
             try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath))
             maxDuration = player?.duration ?? 0.0
@@ -46,7 +49,12 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
-            Slider(value: $progress, in: 0...100).padding().accentColor(Color.purple)
+            Slider(value: Binding(get: {
+                Double(self.progress)
+            }, set: { newValue in
+                self.progress = Float(newValue)
+                self.viewModel.setTime(value: Float(newValue))
+            }), in: 0...viewModel.maxDuration).padding().accentColor(Color.purple)
             
             HStack{
                 Button {
