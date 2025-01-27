@@ -20,7 +20,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         NotificationCenter.default.addObserver(self, selector: #selector(windowManager), name: .wndowManager, object: nil)
         
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let scene = (scene as? UIWindowScene) else { return }
+        self.window = UIWindow(windowScene: scene)
+        self.window?.rootViewController = PreviewView()
+        self.window?.makeKeyAndVisible()
+        
     }
     
     @objc func windowManager(notification: Notification){

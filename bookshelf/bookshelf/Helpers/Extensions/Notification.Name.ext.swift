@@ -10,3 +10,4 @@ import Foundation
 extension Notification.Name {
     static let wndowManager = Notification.Name("windowManager")
 }
+
