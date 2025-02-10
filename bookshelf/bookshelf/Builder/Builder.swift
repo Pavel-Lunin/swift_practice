@@ -20,5 +20,7 @@ class Builder {
         return view
     }
     
-    
+//    static func createRegistView() -> UIViewController {
+//        return self .createView(viewType: <#T##BaseViewProtocol.Protocol#>, presenter: <#T##(BaseViewProtocol) -> BaseViewProtocol.PresenterType#>)
+//    }
 }
